@@ -1,0 +1,134 @@
+﻿@charset "UTF-8";
+/* ---------------------------------------------------------------------
+ * 基本的なスタイルの設定を指定するファイル
+ * --------------------------------------------------------------------- */
+
+/* ==================================================================
+ * 設定の初期化
+ * ================================================================== */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, form, input, dl, dd, dt,div, span, address, label, section, nav {
+	margin: 0px;												/* マージン指定 */
+	padding: 0px;												/* パディング指定 */
+}
+
+html, body {
+	height: 100%;												/* 枠の高さ指定 */
+}
+
+li {
+	list-style-type: none;										/* マーカーの種類指定 */
+}
+
+em {
+	font-style: normal;											/* フォントスタイルの指定 */
+	font-weight: bold;											/* 文字の太さ */
+}
+
+address {
+	font-style: normal;											/* フォントスタイルの指定 */
+	font-weight: normal;										/* 文字の太さ */
+}
+
+
+/* ==================================================================
+ * 再設定
+ * ================================================================== */
+body {
+	background-color: #666666;									/* 背景色指定 */
+	/*background-attachment: fixed;								/* 背景画像の固定・移動を指定 */
+	/*background-image: url("../images/wallpapers/main.gif");		/* 背景画像指定 */
+	/*background-size: 100% 100%;								/* 背景画像のサイズを指定 */
+	/*background-size: 33.4% auto;								/* 背景画像のサイズを指定 */
+	font-family: Meiryo,"MS PGothic",Arial,Verdana;				/* フォントの種類を指定(前から順位確認して、使用できるものを使う) */
+	text-align: center;											/* 文字表示位置 */
+	font-size: 100%;											/* フォントサイズ */
+	font-style: normal;											/* フォントスタイルの指定 */
+	font-weight: normal;										/* 文字の太さ */
+	line-height: 1.5;											/* 行の高さ */
+	text-transform: none;										/* 英語などの大文字表示・小文字表示を指定 */
+
+}
+
+
+
+ul li {
+	margin-left: 2em;											/* マージン指定 */
+	list-style-type: disc;										/* マーカーの種類指定 */
+	list-style-position: outside;								/* マーカーの表示位置指定 */
+}
+ul li ul li {
+	list-style-type: circle;									/* マーカーの種類指定 */
+}
+ul li ul li ul li {
+	list-style-type: square;									/* マーカーの種類指定 */
+}
+ol li {
+	margin-left: 25px;											/* マージン指定 */
+	list-style-type: decimal;									/* マーカーの種類指定 */
+	list-style-position: outside;								/* マーカーの表示位置指定 */
+}
+
+
+table {
+	font-family: Tahoma,Osaka,clean,sans-serif;					/* フォントの種類を指定(前から順位確認して、使用できるものを使う) */
+}
+
+
+form, input, select, textarea {
+	font-family: Tahoma,Osaka,clean,sans-serif;					/* フォントの種類を指定(前から順位確認して、使用できるものを使う) */
+	margin-left: 2px;											/* マージン指定 */
+	padding: 1px;												/* パディング指定 */
+	font-size: 100%;											/* フォントサイズ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;											/* フォントサイズ */
+}
+h1{font-size: 350%;}
+h2{
+	height:24px;margin:0px 0px 5px 0px;padding:6px 0px 0px 0px;
+  font-size:16px;font-weight:bold;color:#333333;
+  background-image:url(../images/head013_05.gif);
+  background-position:bottom;background-repeat:repeat-x;
+
+}
+h3{font-size: 250%;}
+h4{font-size: 200%;}
+h5{font-size: 150%;}
+h6{font-size: 120%;}
+
+img{
+	max-width: 100%;											/* 枠の幅指定(最大) */
+}
+
+/* ----------------------
+ * link
+ * ---------------------- */
+/* -----------------------------------
+ * リンクの色の設定(記入順序に注意)
+ * 未訪問 		a:link
+ * 訪問済み 	a:visited
+ * ポイント時 	a:hover
+ * クリック中 	a:active
+ * ----------------------------------- */
+a {
+	cursor: pointer;											/* カーソルの形状指定 */
+} /* リンク */
+a:link {
+	color: #0000FF;												/* フォントの色 */
+	text-decoration: none;										/* テキストの下線・上線・打ち消し線を指定 */
+	/*text-decoration: underline;								/* テキストの下線・上線・打ち消し線を指定 */
+} /* 未訪問 */
+a:visited {
+	color: #FF00FF;												/* フォントの色 */
+	text-decoration: none;										/* テキストの下線・上線・打ち消し線を指定 */
+	/*text-decoration: underline;								/* テキストの下線・上線・打ち消し線を指定 */
+} /* 訪問済み */
+a:hover {
+	color: #FF8C00;												/* フォントの色 */
+	text-decoration: none;										/* テキストの下線・上線・打ち消し線を指定 */
+} /* ポイント時 */
+a:active {
+	color: #FF0099;												/* フォントの色 */
+	text-decoration: none;										/* テキストの下線・上線・打ち消し線を指定 */
+} /* クリック中 */
