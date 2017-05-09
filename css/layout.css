@@ -3,6 +3,34 @@
  */
 
 body {
+  background-color: #666;
+  font-family: Meiryo, "MS PGothic", Arial, Verdana;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+a {
+  cursol: pointer;
+}
+
+a:link {
+  color: #00f;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f0f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+a:active {
+  color: #f09;
+  text-decoration: none;
 }
 
 /*
@@ -10,9 +38,13 @@ body {
  */
 
 .site-container {
+  margin: 0 auto;
+    /* center site-container in the site. */
+  width: 935px;
 }
 
 .site-wrapper {
+  background-color: #fff;
 }
 
 /*
@@ -26,24 +58,50 @@ body {
 }
 
 .site-header-inner {
+  display: flex;
 }
 
 .site-header-labname {
+  background-color: #c33;
+  margin: 8px 0;
+  text-align: center;
 }
 
 .site-header-labname-sub {
+  font-size: 18pt;
 }
 
 .site-header-labname-main {
+  font-size: 20pt;
 }
 
 .site-header-left {
+  background-color: #f33;
+  width: 60%;
 }
 
 .site-header-nav {
 }
 
+.site-header-nav-element {
+  background-color: #3ff;
+  display: inline-block;
+  font-size: 10pt;
+  text-align: center;
+  width: 96px;
+}
+
+.site-header-nav-list {
+}
+
+.site-header-nav-list li+li {
+  border-left: 1px solid #444;
+}
+
 .site-header-right {
+  background-color: #3f3;
+  text-align: right;
+  width: 40%;
 }
 
 /*
@@ -54,12 +112,34 @@ body {
 }
 
 .site-nav-element {
+  background-color: #ff3;
+  display: table-cell;
+  height: 64px;
+  vertical-align: middle;
+  width: 164px;
+}
+
+.site-nav-element a {
+  display: block;
+  background-color: #cc3;
+  padding: 10px 0;
+}
+
+.site-nav-element a span {
+  display: block;
 }
 
 .site-nav-inner {
 }
 
 .site-nav-list {
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.site-nav-list li+li {
+  border-left: 1px solid #444;
 }
 
 /*
@@ -67,6 +147,7 @@ body {
  */
 
 .site-main {
+  display: flex;
 }
 
 /*
@@ -74,6 +155,11 @@ body {
  */
 
 .primary {
+  background-color: #33a;
+  width: 72%;
+}
+
+.primary-article-header {
 }
 
 .primary-article-title {
@@ -90,6 +176,8 @@ body {
  */
 
 .secondary {
+  background-color: #33f;
+  width: 28%;
 }
 
 .secondary-ads {
