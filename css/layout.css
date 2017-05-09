@@ -3,7 +3,7 @@
  */
 
 body {
-  background-color: #666;
+  color: #222;
   font-family: Meiryo, "MS PGothic", Arial, Verdana;
   font-size: 14px;
   line-height: 1.42857;
@@ -38,14 +38,33 @@ a:active {
  */
 
 .site-container {
-  background-color: #fff;
   margin: 0 auto;
-    /* center site-container in the site. */
   width: 935px;
 }
 
 .site-wrapper {
-  background-color: #666;
+  background-color: #fff;
+  height: auto;
+  width: auto;
+}
+
+.use-theme-color {
+  background-color: #23a;
+  background-color: #a23;
+  color: #fff;
+}
+
+.use-theme-color a,
+.use-theme-color a:link,
+.use-theme-color a:visited,
+.use-theme-color a:hover,
+.use-theme-color a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.use-theme-color a:hover {
+  color: #f73;
 }
 
 /*
@@ -53,67 +72,98 @@ a:active {
  */
 
 .site-header {
+  background: url('../res/header_bg_alt_2.png');
+  background-color: #fff;
+    /* do NOT change this color!! */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 
-.site-header-address {
+.site-masthead {
+  padding: 3px 0;
+  width: 100%;
+}
+
+.site-masthead-nav {
+}
+
+.site-masthead-nav-list {
+  border-right: 1px solid #fff;
+  text-align: right;
+}
+
+.site-masthead-nav-element {
+  border-left: 1px solid #fff;
+  display: inline-block;
+  font-size: 8pt;
+  text-align: center;
+  width: 128px;
+}
+
+.site-masthead-nav-element a {
+  display: block;
 }
 
 .site-header-inner {
-  background: url('../res/header_bg.jpg');
-  color: #fff;
   display: flex;
-  height: 200px;
+  margin: 0 auto;
   width: 935px;
+  height: 100%;
 }
 
-.site-header-labname {
-  margin: 8px 0;
-  text-align: center;
-}
-
-.site-header-labname-sub {
-  font-size: 18pt;
-}
-
-.site-header-labname-main {
-  font-size: 20pt;
-}
-
+/* #### inner-left #### */
 .site-header-left {
+  position: relative;
   width: 60%;
 }
 
-.site-header-nav {
+.site-header-labname {
+  color: #000;
+  position: absolute;
+  bottom: 4px;
+  left: 16px;
 }
 
-.site-header-nav-element {
-  display: inline-block;
-  font-size: 10pt;
-  text-align: center;
-  width: 96px;
+.site-header-labname-main {
+  font-size: 32pt;
 }
 
-.site-header-nav-list {
+.site-header-labname-sub {
+  font-size: 24pt;
 }
+/* #################### */
 
-.site-header-nav-list li+li {
-  border-left: 1px solid #444;
-}
-
+/* #### inner-right #### */
 .site-header-right {
+  position: relative;
   text-align: right;
   width: 40%;
 }
+
+.site-header-address {
+  bottom: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 16px;
+}
+
+.site-header-address p {
+  color: #e63;
+}
+/* ##################### */
 
 /*
  * ---- Main Nav Settings
  */
 
 .site-nav {
+  width: auto;
 }
 
 .site-nav-element {
-  background-color: #34a;
+  border-right: 1px solid #fff;
   display: table-cell;
   height: 64px;
   vertical-align: middle;
@@ -121,8 +171,7 @@ a:active {
 
 .site-nav-element a {
   display: block;
-  background-color: #23a;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .site-nav-element a span {
@@ -130,39 +179,25 @@ a:active {
 }
 
 .site-nav-inner {
-  background-color: #883
+  margin: 0 auto;
 }
 
 .site-nav-list {
+  border-left: 1px solid #fff;
   display: table;
   table-layout: fixed;
   text-align: center;
   width: 100%;
 }
 
-.site-nav-list li+li {
-  border-left: 2px solid #349;
-}
-
-.site-nav a,
-.site-nav a:link,
-.site-nav a:visited,
-.site-nav a:hover,
-.site-nav a:active {
-  color: #fff;
-  text-decoration: none;
-}
-
-.site-nav a:hover {
-  color: #f73;
-}
-
-
 /*
  * ---- Main Settings
  */
 
 .site-main {
+}
+
+.site-main-inner {
   display: flex;
 }
 
@@ -220,9 +255,11 @@ a:active {
  */
 
 .site-footer {
+  width: auto;
 }
 
 .site-footer-inner {
+  text-align: center;
 }
 
 /*
