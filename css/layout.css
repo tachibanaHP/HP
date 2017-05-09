@@ -29,7 +29,7 @@ a:hover {
 }
 
 a:active {
-  color: #f09;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -113,16 +113,15 @@ a:active {
 }
 
 .site-nav-element {
-  background-color: #ff3;
+  background-color: #34a;
   display: table-cell;
   height: 64px;
   vertical-align: middle;
-  width: 164px;
 }
 
 .site-nav-element a {
   display: block;
-  background-color: #cc3;
+  background-color: #23a;
   padding: 10px 0;
 }
 
@@ -136,13 +135,28 @@ a:active {
 
 .site-nav-list {
   display: table;
+  table-layout: fixed;
   text-align: center;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .site-nav-list li+li {
-  border-left: 1px solid #444;
+  border-left: 2px solid #349;
 }
+
+.site-nav a,
+.site-nav a:link,
+.site-nav a:visited,
+.site-nav a:hover,
+.site-nav a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #f73;
+}
+
 
 /*
  * ---- Main Settings
