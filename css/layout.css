@@ -38,13 +38,14 @@ a:active {
  */
 
 .site-container {
+  background-color: #fff;
   margin: 0 auto;
     /* center site-container in the site. */
   width: 935px;
 }
 
 .site-wrapper {
-  background-color: #fff;
+  background-color: #666;
 }
 
 /*
@@ -58,11 +59,14 @@ a:active {
 }
 
 .site-header-inner {
+  background: url('../res/header_bg.jpg');
+  color: #fff;
   display: flex;
+  height: 200px;
+  width: 935px;
 }
 
 .site-header-labname {
-  background-color: #c33;
   margin: 8px 0;
   text-align: center;
 }
@@ -76,7 +80,6 @@ a:active {
 }
 
 .site-header-left {
-  background-color: #f33;
   width: 60%;
 }
 
@@ -84,7 +87,6 @@ a:active {
 }
 
 .site-header-nav-element {
-  background-color: #3ff;
   display: inline-block;
   font-size: 10pt;
   text-align: center;
@@ -99,7 +101,6 @@ a:active {
 }
 
 .site-header-right {
-  background-color: #3f3;
   text-align: right;
   width: 40%;
 }
@@ -130,6 +131,7 @@ a:active {
 }
 
 .site-nav-inner {
+  background-color: #883
 }
 
 .site-nav-list {
@@ -150,25 +152,33 @@ a:active {
   display: flex;
 }
 
+.primary-container,
+.secondary-container {
+  background-color: #fff;
+  margin: 10px;
+}
+
 /*
  * ---- Main Settings / primary
  */
 
 .primary {
-  background-color: #33a;
-  width: 72%;
+  width: 75%;
 }
 
-.primary-article-header {
-}
-
-.primary-article-title {
+.primary-article {
 }
 
 .primary-container {
 }
 
-.primary-container-inner {
+.primary-header {
+}
+
+.primary-section {
+}
+
+.primary-title {
 }
 
 /*
@@ -176,20 +186,19 @@ a:active {
  */
 
 .secondary {
-  background-color: #33f;
-  width: 28%;
-}
-
-.secondary-ads {
+  width: 25%;
 }
 
 .secondary-container {
 }
 
-.secondary-links {
+.secondary-header {
 }
 
-.secondary-update-log {
+.secondary-section {
+}
+
+.secondary-title {
 }
 
 /*
@@ -205,3 +214,19 @@ a:active {
 /*
  * ---- Other Settings
  */
+
+
+/*************************************************************/
+
+/*
+ *
+ */
+
+.secondary-links {
+}
+
+.secondary-update-log {
+}
+
+.secondary-ads {
+}
