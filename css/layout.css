@@ -50,7 +50,6 @@ a:active {
 
 .use-theme-color {
   background-color: #23a;
-  background-color: #a23;
   color: #fff;
 }
 
@@ -82,7 +81,7 @@ a:active {
 }
 
 .site-masthead {
-  padding: 3px 0;
+  padding: 4px 0;
   width: 100%;
 }
 
@@ -91,13 +90,13 @@ a:active {
 
 .site-masthead-nav-list {
   border-right: 1px solid #fff;
+  font-size: 8pt;
   text-align: right;
 }
 
 .site-masthead-nav-element {
   border-left: 1px solid #fff;
   display: inline-block;
-  font-size: 8pt;
   text-align: center;
   width: 128px;
 }
