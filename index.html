@@ -12,6 +12,7 @@
   <meta name="author" content="Tachibanal Lab" />
   <title>橘研究室</title>
   <link rel="stylesheet" type="text/css" href="./css/html5doctor.com.reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/layout.css">
 </head>
 
 <body>
@@ -29,10 +30,10 @@
       </div>
       <div class="site-header-right">
         <nav class="site-header-nav">
-          <ul>
-            <li>サイトマップ</li>
-            <li>アクセス</li>
-            <li>English</li>
+          <ul class="site-header-nav-list">
+            <li class="site-header-nav-element"><a href="">サイトマップ</a></li>
+            <li class="site-header-nav-element"><a href="">アクセス</a></li>
+            <li class="site-header-nav-element"><a href="">English</a></li>
           </ul>
         </nav>
         <address class="site-header-address">
@@ -50,11 +51,11 @@
   <nav class="site-nav site-container">
     <div class="site-nav-inner">
       <ul class="site-nav-list">
-        <li class="site-nav-element"><a href="">ホーム</a></li>
-        <li class="site-nav-element"><a href="">研究内容</a></li>
-        <li class="site-nav-element"><a href="">研究業績</a></li>
-        <li class="site-nav-element"><a href="">研究室紹介</a></li>
-        <li class="site-nav-element"><a href="">メンバー</a></li>
+        <li class="site-nav-element"><a href="">ホーム<span>Home</span></a></li>
+        <li class="site-nav-element"><a href="">研究内容<span>Research</span></a></li>
+        <li class="site-nav-element"><a href="">研究業績<span>Achievements</span></a></li>
+        <li class="site-nav-element"><a href="">研究室紹介<span>Introduction</span></a></li>
+        <li class="site-nav-element"><a href="">メンバー<span>Member</span></a></li>
       </ul>
     </div>
   </nav>
@@ -62,20 +63,6 @@
 
   <!-- # BEGIN-SITE-MAIN-AREA # -->
   <main class="site-main site-container">
-    <div class="primary">
-      <article class="primary-container">
-        <h2>Article Title</h2>
-        <section class="primary-container-inner">
-          <p>Write The Content-Detail Here.</p>
-        </section>
-      </article>
-      <article class="primary-container">
-        <h2>Article Title</h2>
-        <section class="primary-container-inner">
-          <p>Write The Content-Detail Here.</p>
-        </section>
-      </article>
-    </div>
     <div class="secondary">
       <aside class="secondary-update-log secondary-container">
       </aside>
@@ -83,6 +70,26 @@
       </nav>
       <aside class="secondary-ads secondary-container">
       </aside>
+    </div>
+    <div class="primary">
+      <article class="primary-container">
+        <header class="primary-article-header">
+          <h2 class="primary-article-title">Article Title</h2>
+          <!-- TODO: ADD UPDATE-DATE -->
+        </header>
+        <section class="primary-container-inner">
+          <p>Write The Content-Detail Here.</p>
+        </section>
+      </article>
+      <article class="primary-container">
+        <header class="primary-article-header">
+          <h2 class="primary-article-title">Article Title</h2>
+          <!-- TODO: ADD UPDATE-DATE -->
+        </header>
+        <section class="primary-container-inner">
+          <p>Write The Content-Detail Here.</p>
+        </section>
+      </article>
     </div>
   </main>
   <!-- # END-SITE-MAIN-AREA # -->
