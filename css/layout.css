@@ -39,7 +39,7 @@ a:active {
 
 .site-container {
   margin: 0 auto;
-  width: 935px;
+  width: 960px;
 }
 
 .site-wrapper {
@@ -98,7 +98,7 @@ a:active {
   border-left: 1px solid #fff;
   display: inline-block;
   text-align: center;
-  width: 128px;
+  width: 96px;
 }
 
 .site-masthead-nav-element a {
@@ -115,7 +115,7 @@ a:active {
 /* #### inner-left #### */
 .site-header-left {
   position: relative;
-  width: 60%;
+  width: 30%;
 }
 
 .site-header-labname {
@@ -138,14 +138,23 @@ a:active {
 .site-header-right {
   position: relative;
   text-align: right;
-  width: 40%;
+  width: 70%;
 }
 
-.site-header-address {
+.site-header-right-bottom {
   bottom: 12px;
   font-weight: bold;
   position: absolute;
   right: 16px;
+}
+
+.site-header-org {
+  color: #777;
+}
+
+.site-header-org-separater {
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .site-header-address p {
@@ -198,12 +207,29 @@ a:active {
 
 .site-main-inner {
   display: flex;
+  padding-top: 16px;
 }
 
 .primary-container,
 .secondary-container {
   background-color: #fff;
-  margin: 10px;
+  margin: 5px;
+}
+
+.site-slideshow {
+}
+
+.site-slideshow-inner {
+  background-color: #000;
+  color: #fff;
+  height: 200px;
+  margin: 8px auto;
+  text-align: center;
+
+/*
+  font-size: 0;
+  height: 0;
+/**/
 }
 
 /*
@@ -211,13 +237,14 @@ a:active {
  */
 
 .primary {
-  width: 75%;
+  width: 100%;
 }
 
 .primary-article {
 }
 
 .primary-container {
+  margin-bottom: 28px;
 }
 
 .primary-header {
@@ -227,6 +254,8 @@ a:active {
 }
 
 .primary-title {
+  font-size: 28px;
+  line-height: 8px;
 }
 
 /*
@@ -234,7 +263,7 @@ a:active {
  */
 
 .secondary {
-  width: 25%;
+  width: 0%;
 }
 
 .secondary-container {
