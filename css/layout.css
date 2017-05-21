@@ -7,6 +7,7 @@ body {
   font-family: Meiryo, "MS PGothic", Arial, Verdana;
   font-size: 14px;
   line-height: 1.42857;
+  min-width: 960px;
 }
 
 a {
@@ -19,7 +20,7 @@ a:link {
 }
 
 a:visited {
-  color: #f0f;
+  color: #00f;
   text-decoration: none;
 }
 
@@ -71,7 +72,7 @@ a:active {
  */
 
 .site-header {
-  background: url('../res/header_bg_alt_2.png');
+  background: url("../res/header_bg_alt_2.png");
   background-color: #fff;
     /* do NOT change this color!! */
   background-size: cover;
@@ -213,7 +214,7 @@ a:active {
 .primary-container,
 .secondary-container {
   background-color: #fff;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .site-slideshow {
@@ -222,7 +223,7 @@ a:active {
 .site-slideshow-inner {
   background-color: #000;
   color: #fff;
-  height: 200px;
+  height: 128px;
   margin: 8px auto;
   text-align: center;
 
@@ -240,22 +241,100 @@ a:active {
   width: 100%;
 }
 
-.primary-article {
-}
-
 .primary-container {
   margin-bottom: 28px;
 }
 
-.primary-header {
+.content-header {
 }
 
-.primary-section {
+.content-section {
 }
 
-.primary-title {
+.content-title {
   font-size: 28px;
-  line-height: 8px;
+  line-height: 28px;
+}
+
+.news {
+}
+
+.news-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-container {
+  width: 33%;
+}
+
+.news-inner {
+  background-color: #f9fafe;
+  padding: 18px;
+  margin: 0 5px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.news-inner::after {
+    content: "";
+    border-color: #eee #fff #fff #eee;
+    border-style: solid;
+    border-width: 0 0 18px 18px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.news-header {
+  display: flex;
+}
+
+.news-header::before {
+  background: url("../res/icons/266-question.png") no-repeat left center;
+  content: "";
+  height: 16px;
+  width: 16px;
+  padding-right: 8px;
+}
+
+.news-update .news-header::before {
+  background: url("../res/icons/303-loop2.png") no-repeat left center;
+}
+
+.news-academic .news-header::before {
+  background: url("../res/icons/034-library.png") no-repeat left center;
+}
+
+.news-international .news-header::before {
+  background: url("../res/icons/176-airplane.png") no-repeat left center;
+}
+
+.news-event .news-header::before {
+  background: url("../res/icons/084-calendar.png") no-repeat left center;
+}
+
+.news-title {
+  flex: 1;
+  font-size: 16px;
+}
+
+.news-date-posted {
+  font-size: 8px;
+  font-style: italic;
+  text-align: right;
+  margin-left: auto;
+  width: 64px;
+}
+
+.news-separater {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.link-past-news {
+  margin-top: -8px;
+  text-align: right;
 }
 
 /*
@@ -283,7 +362,7 @@ a:active {
  */
 
 .site-footer {
-  width: auto;
+  width: 100%;
 }
 
 .site-footer-inner {
