@@ -198,6 +198,17 @@ a:active {
   width: 100%;
 }
 
+.site-lastupdate {
+  background-color: #fafafa;
+  color: #111;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.site-lastupdate-inner {
+  text-align: right;
+}
+
 /*
  * ---- Main Settings
  */
