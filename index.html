@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="content-language" content="ja" />
@@ -12,28 +10,26 @@
     <!-- フリーのリセットCSS．これがある方がデザインが楽（デフォルトマージンなどがゼロイングされるため）． -->
   <link rel="stylesheet" type="text/css" href="./css/layout.css">
 </head>
-
 <body>
-<div id="site">
-  <header id="masthead">
+<div class="site" id="id_site">
+  <header class="masthead theme-color" id="id_masthead">
     <div class="masthead-inner site-container">
-      <!-- ここに Javascript 使用できないなどの旨を書けばよいのでは？ -->
-      <!--
-      <aside class="javascript-error-container">
-        hogehogehogehogehogehoge
-      </aside>
-      -->
+      <!-- <noscript> -->
+        <aside class="masthead-js-msg-container">
+          <p>※JaveScriptが無効です。コンテンツが正常に表示されない可能性があります。</p>
+        </aside>
+      <!-- </noscript> -->
       <nav class="masthead-nav">
-        <ul class="masthead-nav-list">
-          <li class="masthead-nav-elem"><a href="">サイトマップ</a></li>
-          <li class="masthead-nav-elem"><a href="">アクセス</a></li>
-          <li class="masthead-nav-elem"><a href="">简体字</a></li>
-          <li class="masthead-nav-elem"><a href="">English</a></li>
+        <ul class="masthead-nav-links">
+          <li class="masthead-nav-link"><a href="">サイトマップ</a></li>
+          <li class="masthead-nav-link"><a href="">アクセス</a></li>
+          <li class="masthead-nav-link"><a href="">简体字</a></li>
+          <li class="masthead-nav-link"><a href="">English</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <header id="site-header">
+  <header class="site-header" id="id_site-header">
     <div class="site-header-inner site-container">
       <div class="site-header-labname-container">
         <h1 class="site-header-labname-main">橘研究室</h1>
@@ -52,28 +48,25 @@
       </div>
     </div>
   </header>
-  <nav id="site-nav">
-    <div class="site-nav-inner site-conatainer">
-      <ul class="site-nav-list">
-        <li class="site-nav-elem"><a href="">ホーム</a></li>
-        <li class="site-nav-elem"><a href="">研究内容</a></li>
-        <li class="site-nav-elem"><a href="">研究業績</a></li>
-        <li class="site-nav-elem"><a href="">メンバー</a></li>
-        <li class="site-nav-elem"><a href="">配属希望者向け</a></li>
+  <nav class="site-nav theme-color" id="id_site-nav">
+    <div class="site-nav-inner site-container">
+      <ul class="site-nav-links">
+        <li class="site-nav-link"><a href="">ホーム<span>Home</span></a></li>
+        <li class="site-nav-link"><a href="">研究内容<span>Research</span></a></li>
+        <li class="site-nav-link"><a href="">研究業績<span>Achievements</span></a></li>
+        <li class="site-nav-link"><a href="">メンバー<span>Members</span></a></li>
+        <li class="site-nav-link"><a href="">配属希望者向け<span>For Students</span></a></li>
       </ul>
     </div>
   </nav>
-  <main id="site-main">
+  <main class="site-main" id="id_site-main">
     <div class="site-main-inner site-container">
-      <p>A quick brown fox jumps over the lazy dog.</p>
     </div>
   </main>
-  <footer id="site-footer">
+  <footer class="site-footer" id="id_site-footer">
     <div class="site-footer-inner site-container">
-      <p>Quick fox jumps nightly above wizard.</p>
     </div>
   </footer>
 </div>
 </body>
-
 </html>
