@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8" />
@@ -16,17 +15,16 @@
 
 <body>
 <div id="site">
-  <!-- masthead の案には賛否両論だったので，一応それっぽいのを記述 -->
   <header id="masthead">
-    <div id="masthead-inner" class="site-container">
+    <div class="masthead-inner site-container">
       <!-- ここに Javascript 使用できないなどの旨を書けばよいのでは？ -->
       <!--
-      <aside id="javascript-error-container">
+      <aside class="javascript-error-container">
         hogehogehogehogehogehoge
       </aside>
       -->
-      <nav id="masthead-nav">
-        <ul id="masthead-nav-list">
+      <nav class="masthead-nav">
+        <ul class="masthead-nav-list">
           <li class="masthead-nav-elem"><a href="">サイトマップ</a></li>
           <li class="masthead-nav-elem"><a href="">アクセス</a></li>
           <li class="masthead-nav-elem"><a href="">简体字</a></li>
@@ -35,25 +33,28 @@
       </nav>
     </div>
   </header>
-  <!-- masthead 終了 -->
   <header id="site-header">
-    <div id="site-header-inner" class="site-container">
-      <div id="site-header-inner-left">
-        <h1>橘研究室</h1>
+    <div class="site-header-inner site-container">
+      <div class="site-header-labname-container">
+        <h1 class="site-header-labname-main">橘研究室</h1>
+        <h2 class="site-header-labname-sub">Tachibana Lab.</h2>
       </div>
-      <div id="site-header-inner-right">
-        <div id="site-header-affi">
-          <p>所属</p>
+      <div class="site-header-info-container">
+        <div class="site-header-affi">
+          <p>福井大学 大学院工学研究科 情報・メディア工学専攻</p>
+          <hr class="site-header-affi-separater">
         </div>
-        <div id="site-header-addr">
-          <p>住所</p>
-        </div>
+        <address class="site-header-addr">
+          <p>福井大学文京キャンパス</p>
+          <p>〒910-8507 福井県福井市文京3丁目9番1号</p>
+          <p>工学部3号館 4階 (3-400)</p>
+        </address>
       </div>
     </div>
   </header>
   <nav id="site-nav">
-    <div id="site-nav-inner" class="site-conatainer">
-      <ul id="site-nav-list">
+    <div class="site-nav-inner site-conatainer">
+      <ul class="site-nav-list">
         <li class="site-nav-elem"><a href="">ホーム</a></li>
         <li class="site-nav-elem"><a href="">研究内容</a></li>
         <li class="site-nav-elem"><a href="">研究業績</a></li>
@@ -62,13 +63,13 @@
       </ul>
     </div>
   </nav>
-  <main id="site-main" class="site-container">
-    <div id="site-main-inner" class="site-container">
+  <main id="site-main">
+    <div class="site-main-inner site-container">
       <p>A quick brown fox jumps over the lazy dog.</p>
     </div>
   </main>
-  <footer id="site-footer" class="site-container">
-    <div id="site-footer-inner" class="site-container">
+  <footer id="site-footer">
+    <div class="site-footer-inner site-container">
       <p>Quick fox jumps nightly above wizard.</p>
     </div>
   </footer>
