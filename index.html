@@ -15,12 +15,17 @@
 </head>
 
 <body>
-<div id="site-wrapper">
-  <header id="site-header">
-    <!-- masthead の案には賛否両論だったので，一応それっぽいのを記述 -->
-    <!--
-    <div id="masthead">
-      <nav id="masthead-nav" class="site-container">
+<div id="site">
+  <!-- masthead の案には賛否両論だったので，一応それっぽいのを記述 -->
+  <header id="masthead">
+    <div id="masthead-inner" class="site-container">
+      <!-- ここに Javascript 使用できないなどの旨を書けばよいのでは？ -->
+      <!--
+      <aside id="javascript-error-container">
+        hogehogehogehogehogehoge
+      </aside>
+      -->
+      <nav id="masthead-nav">
         <ul id="masthead-nav-list">
           <li class="masthead-nav-elem"><a href="">サイトマップ</a></li>
           <li class="masthead-nav-elem"><a href="">アクセス</a></li>
@@ -29,25 +34,18 @@
         </ul>
       </nav>
     </div>
-    -->
-    <!-- masthead 終了 -->
+  </header>
+  <!-- masthead 終了 -->
+  <header id="site-header">
     <div id="site-header-inner" class="site-container">
-      <nav id="site-header-nav">
-        <ul id="site-header-nav-list">
-          <li class="masthead-nav-elem"><a href="">サイトマップ</a></li>
-          <li class="masthead-nav-elem"><a href="">アクセス</a></li>
-          <li class="masthead-nav-elem"><a href="">简体字</a></li>
-          <li class="masthead-nav-elem"><a href="">English</a></li>
-        </ul>
-      </nav>
-      <div id="site-header-labname-container">
+      <div id="site-header-inner-left">
         <h1>橘研究室</h1>
       </div>
-      <div id="site-header-info">
-        <div id="site-header-affiliation">
+      <div id="site-header-inner-right">
+        <div id="site-header-affi">
           <p>所属</p>
         </div>
-        <div id="site-header-address">
+        <div id="site-header-addr">
           <p>住所</p>
         </div>
       </div>
@@ -75,6 +73,6 @@
     </div>
   </footer>
 </div>
-</dody>
+</body>
 
 </html>
