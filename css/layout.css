@@ -3,7 +3,6 @@
  */
 
 body {
-  color: #222;
   font-family: Meiryo, "MS PGothic", Arial, Verdana;
   font-size: 14px;
   line-height: 1.42857;
@@ -45,16 +44,18 @@ a:active {
  * ---- Site Style
 **/
 
-.site {
-  background-color: #fff;
-  height: auto;
-  width: auto;
-}
-
 .site-container {
   margin: 0 auto;
     /* centering */
   width: 920px;
+}
+
+.site-bg {
+  background-color: #fff;
+}
+
+.site-fc {
+  color: #222;
 }
 
 .theme-color {
@@ -79,16 +80,13 @@ a:active {
  * ---- Masthead Style
 **/
 
-.masthead {
-  font-size: 8.5pt;
-  padding: 6px 0;
-}
-
 .masthead-inner {
   display: flex;
+  font-size: 8.5pt;
   justify-content: space-between;
     /* consider masthead-js-msg-container.
        flex-items are lined up and evenly spaced. */
+  padding: 6px 0;
 }
 
 .masthead-js-msg-container {
@@ -118,22 +116,12 @@ a:active {
  * ---- Header Style
 **/
 
-.site-header {
-  background-color: #fff;
-  /* do NOT change this color!!
-     this means that alternative color is white,
-     so it should be equal to the default background color. */
-  height: 200px;
-    /* this is an experimental setting. */
-}
-
 .site-header-inner {
   align-items: flex-end;
     /* flex items contained in site-header-inner are moved to this container bottom. */
   display: flex;
-  height: 100%;
-    /* transform this container's height to the parent's one.
-       this is due to align-items property. */ 
+  height: 200px;
+    /* this is an experimental setting. */
   justify-content: space-between;
 }
 
@@ -171,9 +159,6 @@ a:active {
 /*
  * ---- Site Navigation Style
 **/
-
-.site-nav {
-}
 
 .site-nav-inner {
   padding: 0 0;
