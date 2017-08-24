@@ -116,11 +116,17 @@ a:active {
  * ---- Header Style
 **/
 
+.site-header-bg {
+  background: url("../res/e.png");
+  background-color: #888;
+  background-repeat: repeat;
+}
+
 .site-header-inner {
   align-items: flex-end;
     /* flex items contained in site-header-inner are moved to this container bottom. */
   display: flex;
-  height: 200px;
+  height: 256px;
     /* this is an experimental setting. */
   justify-content: space-between;
 }
@@ -194,4 +200,18 @@ a:active {
 
 .site-nav-link a span {
   display: block;
+}
+
+/*
+ * ---- Site Navigation Style
+**/
+
+.site-footer-inner {
+  align-items: center;
+  display: flex;
+  height: 128px;
+  justify-content: center;
+}
+
+.site-footer-copyright {
 }
