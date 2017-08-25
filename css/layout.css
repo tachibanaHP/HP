@@ -48,7 +48,6 @@ a:active {
   margin: 0 auto;
     /* centering */
   max-width: 1010px;
-  min-width: 760px;
 }
 
 .site-bg {
@@ -57,6 +56,14 @@ a:active {
 
 .site-fc {
   color: #222;
+}
+
+.site-mt-l {
+  margin-top: 50px;
+}
+
+.site-minw {
+  min-width: 760px;
 }
 
 .theme-color {
@@ -206,7 +213,18 @@ a:active {
 }
 
 /*
- * ---- Site Navigation Style
+ * ---- Site Main Style
+ *
+ *      NOTE: article settings are in the lower part..
+ *
+**/
+
+.site-main-container {
+  margin: 10px 20px;
+}
+
+/*
+ * ---- Site Footer Style
 **/
 
 .site-footer-inner {
@@ -214,4 +232,65 @@ a:active {
   display: flex;
   height: 128px;
   justify-content: center;
+}
+
+/*******************************************************/
+
+/*
+ * ---- Article Style
+**/
+
+.article-header-title {
+  font-size: 16px;
+}
+
+.article-header-separater {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+/*
+ * ---- Slideshow Style
+**/
+
+.slideshow-container {
+  background-color: #333;
+  color: #fff;
+  height: 128px;
+  text-align: center;
+}
+
+/*
+ * ---- News Style
+**/
+
+.news-content {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.news-items {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style:none;
+}
+
+.news-item:first-child {
+    /* NOTE: column-REVERSE property is uded. so first-child. */
+  border-bottom: none;
+}
+
+.news-item {
+  border-bottom: 1px solid #ccc;
+  padding: 16px 0;
+}
+
+.news-header,
+.news-disc {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.news-disc {
+  margin-left: 32px;
 }
