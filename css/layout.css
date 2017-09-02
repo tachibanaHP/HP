@@ -63,7 +63,7 @@ a:active {
 }
 
 .site-minw {
-  min-width: 760px;
+  min-width: 680px;
 }
 
 .theme-color {
@@ -258,10 +258,15 @@ a:active {
 **/
 
 .slideshow-container {
-  background-color: #333;
-  color: #fff;
-  height: 128px;
+  margin: 1px 0;
   text-align: center;
+}
+
+.slideshow-container img {
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height: 100%;
 }
 
 /*

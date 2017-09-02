@@ -7,8 +7,9 @@
   <meta name="author" content="Tachibanal Lab." />
   <title>橘研究室</title>
   <link rel="stylesheet" type="text/css" href="./css/html5doctor.com.reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/swiper.css">
   <link rel="stylesheet" type="text/css" href="./css/layout.css">
-  <link rel="stylesheet" type="text/css" href="./css/home.css">
+  <script type="text/javascript" src="./js/swiper.js"></script>
   <script type="text/javascript" src="./js/footerFixed.js"></script>
 </head>
 <body>
@@ -63,7 +64,23 @@
   <main class="site-minw" id="site-main">
     <div class="site-main-inner site-container">
       <div class="slideshow-container site-main-container">
-        slideshow
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./res/slideshow/sample_00.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./res/slideshow/sample_01.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./res/slideshow/sample_02.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
       <article class="site-main-container">
         <header class="article-header">
@@ -128,6 +145,19 @@
       <p class="site-footer-copyright"><small>© 2017 Tachibana Lab. All Rights Reserved.</small></p>
     </div>
   </footer>
+  <script type="text/javascript">
+
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 2,
+      speed: 1000,
+      autoplay: 5000,
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev'
+    })
+  </script>
 </div>
 </body>
 </html>
