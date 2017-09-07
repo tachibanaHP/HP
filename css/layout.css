@@ -2,9 +2,13 @@
  * ---- Base
  */
 
+html {
+  font-size: 15px;
+}
+
 body {
-  font-family: Meiryo, "MS PGothic", Arial, Verdana;
-  font-size: 14px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, Verdana, "メイリオ", Meiryo, "MS PGothic";
+  font-size: 1.0rem;
   line-height: 1.42857;
 }
 
@@ -32,6 +36,15 @@ a:active {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 /*
  * [ IMPORTANT ]
  *
@@ -44,44 +57,79 @@ a:active {
  * ---- Site Style
 **/
 
-.site-container {
+.cmn-container {
   margin: 0 auto;
     /* centering */
   max-width: 1010px;
 }
 
-.site-bg {
+.cmn-bg {
   background-color: #fff;
 }
 
-.site-fc {
+.cmn-fcolor {
   color: #222;
 }
 
-.site-mt-l {
-  margin-top: 50px;
+.cmn-fsize-tiny {
+  font-size: 0.7rem;
 }
 
-.site-minw {
+.cmn-fsize-small {
+  font-size: 0.8rem;
+}
+
+.cmn-fsize-middle {
+  font-size: 1.0rem;
+}
+
+.cmn-fsize-large {
+  font-size: 1.2rem;
+}
+
+.cmn-fsize-huge {
+  font-size: 1.5rem;
+}
+
+.cmn-fsize-txt {
+  font-size: 1.0rem;
+  line-height: 1.875;
+}
+
+.cmn-nextp {
+  margin-top: 1.4em;
+}
+
+.cmn-separater {
+  height:1px;
+  border:0;   
+  border-top:1px solid #bbb;
+}
+
+.cmn-display-block {
+  display: block;
+}
+
+.cmn-minw {
   min-width: 680px;
 }
 
-.theme-color {
-  background-color: #233;
+.cmn-thm {
   background-color: #349;
+  background-color: #233;
   color: #fff;
 }
 
-.theme-color a,
-.theme-color a:link,
-.theme-color a:visited,
-.theme-color a:hover,
-.theme-color a:active {
+.cmn-thm a,
+.cmn-thm a:link,
+.cmn-thm a:visited,
+.cmn-thm a:hover,
+.cmn-thm a:active {
   color: #fff;
   text-decoration: none;
 }
 
-.theme-color a:hover {
+.cmn-thm a:hover {
   color: #f73;
 }
 
@@ -91,14 +139,13 @@ a:active {
 
 .masthead-inner {
   display: flex;
-  font-size: 8.5pt;
   justify-content: space-between;
     /* consider masthead-js-msg-container.
        flex-items are lined up and evenly spaced. */
   padding: 6px 0;
 }
 
-.masthead-js-msg-container {
+.masthead-msg-container {
   color: #f73;
 }
 
@@ -112,13 +159,13 @@ a:active {
     /* make items side by side */
 }
 
-.masthead-nav-link {
+.masthead-nav-links > li {
   text-align: center;
 }
 
-.masthead-nav-link a {
+.masthead-nav-links > li > a {
   display: block;
-  padding: 0 16px;
+  padding: 0 18px;
     /* expand on-click space. */
 }
 
@@ -126,62 +173,63 @@ a:active {
  * ---- Header Style
 **/
 
-.site-header-bg {
+.header-container {
   background: url("../res/e.png");
   background-color: #fff;
   background-repeat: repeat;
 }
 
-.site-header-inner {
+.header-inner {
   align-items: flex-end;
     /* flex items contained in site-header-inner are moved to this container bottom. */
   display: flex;
-  height: 200px;
-    /* this is an experimental setting. */
+  height: 192px;
+    /* this valuer must be calculated, 64 * n.*/
   justify-content: space-between;
 }
 
-.site-header-labname-container {
+.header-labname-container {
   margin: 0 0 10px 20px;
 }
 
-.site-header-labname-main {
+.header-labname-main {
   font-size: 32pt;
+  font-weight: bold;
 }
 
-.site-header-labname-sub {
+.header-labname-sub {
   font-size: 24pt;
+  font-weight: bold;
 }
 
-.site-header-info-container {
+.header-info-container {
   font-weight: bold;
   margin: 0 20px 10px 0;
   text-align: right;
 }
 
-.site-header-affi {
+.header-info-affi {
   color: #777;
 }
 
-.site-header-affi-separater {
+.header-info-separater {
   margin-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
-.site-header-addr {
+.header-info-addr {
   color: #e63;
 }
 
 /*
- * ---- Site Navigation Style
+ * ---- Global Navigation Style
 **/
 
-.site-nav-inner {
+.gnav-inner {
   padding: 0 0;
 }
 
-.site-nav-links {
-  border-left: 1px solid #fff;
+.gnav-links {
   display: table;
   table-layout: fixed;
   text-align: center;
@@ -189,27 +237,28 @@ a:active {
     /* navigation links should be centered on the page. */ 
 }
 
-.site-nav-link {
-  border-right: 1px solid #fff;
+.gnav-links > li {
+  border-right: 2px solid #f6f6f6;
   display: table-cell;
     /* please note that the parent container's display type is set to table. */
   vertical-align: middle;
 }
 
-.site-nav-link a {
+.gnav-links > li:first-child {
+  border-left: 2px solid #f6f6f6;
+}
+
+.gnav-jmp {
   display: block;
   padding: 10px 0;
-    /* expand on-click space. 
-       be careful NOT to set a too large value. */
 }
 
-.site-nav-link a:hover {
+.gnav-jmp:hover {
   background-color: #78e;
-  color: #fff;
 }
 
-.site-nav-link a span {
-  display: block;
+.gnav-jmp:hover > span {
+  color: #fff;
 }
 
 /*
@@ -220,17 +269,23 @@ a:active {
 **/
 
 .site-main-container {
-  margin: 10px 8px;
+  margin: 16px 8px;
+  margin: 0;
+  padding: 16px 8px;
 }
 
 /*
  * ---- Site Footer Style
 **/
 
-.site-footer-inner {
+.footer-wrapper {
+  margin-top: 32px;
+}
+
+.footer-inner {
   align-items: center;
   display: flex;
-  height: 48px;
+  height: 64px;
   justify-content: center;
 }
 
@@ -241,7 +296,10 @@ a:active {
 **/
 
 .article-header-title {
-  font-size: 16px;
+}
+
+.article-title-sub {
+  margin-left: 4px;
 }
 
 .article-header-separater {
@@ -258,8 +316,8 @@ a:active {
 **/
 
 .slideshow-container {
-  margin: 0;
-  padding-top: 4px;
+  margin: 0 2px;
+  padding: 2px 0 0 0;
   text-align: center;
 }
 
@@ -268,7 +326,7 @@ a:active {
   height:auto;
   max-width:100%;
   max-height: 100%;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 /*

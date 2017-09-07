@@ -12,7 +12,7 @@
 new function(){
 	
 	// var footerId = "footer";
-	var footerId = "site-footer";
+	var footerId = "footer";
 	//���C��
 	function footerFixed(){
 		//�h�L�������g�̍���
