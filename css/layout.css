@@ -258,9 +258,8 @@ a:active {
 **/
 
 .slideshow-container {
-  background-color: #efefef;
   margin: 0;
-  padding-top: 2px;
+  padding-top: 4px;
   text-align: center;
 }
 
@@ -269,6 +268,7 @@ a:active {
   height:auto;
   max-width:100%;
   max-height: 100%;
+  border-radius: 4px;
 }
 
 /*
