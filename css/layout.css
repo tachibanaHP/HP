@@ -136,7 +136,7 @@ a:active {
   align-items: flex-end;
     /* flex items contained in site-header-inner are moved to this container bottom. */
   display: flex;
-  height: 256px;
+  height: 200px;
     /* this is an experimental setting. */
   justify-content: space-between;
 }
@@ -220,7 +220,7 @@ a:active {
 **/
 
 .site-main-container {
-  margin: 10px 20px;
+  margin: 10px 8px;
 }
 
 /*
@@ -230,7 +230,7 @@ a:active {
 .site-footer-inner {
   align-items: center;
   display: flex;
-  height: 96px;
+  height: 48px;
   justify-content: center;
 }
 
