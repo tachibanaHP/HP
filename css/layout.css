@@ -123,6 +123,15 @@ h6 {
   min-width: 780px;
 }
 
+.cmn-linkstyle-pure,
+.cmn-linkstyle-pure:link,
+.cmn-linkstyle-pure:visited,
+.cmn-linkstyle-pure:hover,
+.cmn-linkstyle-pure:active {
+  color: #222;
+  text-decoration: none;
+}
+
 .cmn-thm {
   background-color: #349;
   background-color: #233;
