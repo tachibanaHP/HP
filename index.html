@@ -15,8 +15,8 @@
 <body>
 <div class="wrapper cmn-bg cmn-fcolor" id="site">
   <header class="heder-wrapper cmn-minw" id="header">
-    <div class="cmn-thm" id="masthead">
-      <div class="masthead-inner cmn-container cmn-fsize-tiny">
+    <div class="masthead-container cmn-thm" id="masthead">
+      <div class="masthead-inner cmn-container cmn-fsize-small">
         <aside class="masthead-msg-container">
           <noscript>
             <p>※JaveScriptが無効です。コンテンツが正常に表示されない可能性があります。</p>
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <nav class="cmn-thm" id="gnav">
+    <nav class="gnav-container cmn-thm" id="gnav">
       <div class="gnav-inner cmn-container">
         <ul class="gnav-links">
           <li><a class="gnav-jmp" href="">
@@ -83,19 +83,19 @@
       <div class="slideshow-inner swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./res/slideshow/sample_00.jpg">
+            <img src="./res/slideshow/sample_00.png">
           </div>
           <div class="swiper-slide">
-            <img src="./res/slideshow/sample_01.jpg">
+            <img src="./res/slideshow/sample_01.png">
           </div>
           <div class="swiper-slide">
-            <img src="./res/slideshow/sample_02.jpg">
+            <img src="./res/slideshow/sample_02.png">
           </div>
           <div class="swiper-slide">
-            <img src="./res/slideshow/sample_03.jpg">
+            <img src="./res/slideshow/sample_03.png">
           </div>
           <div class="swiper-slide">
-            <img src="./res/slideshow/sample_04.jpg">
+            <img src="./res/slideshow/sample_04.png">
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -105,12 +105,15 @@
       </div>
       <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
+          effect: 'slide',
+          initialSlide: 2,
           loop: true,
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 2,
-          speed: 2000,
-          autoplay: 3000,
+          speed: 2500,
+          autoplay: 4500,
           pagination: '.swiper-pagination',
+          paginationClickable: true,
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev'
         })
@@ -146,7 +149,7 @@
                   <span class="news-date">2017.04.01</span>
                 </div>
                 <div class="news-desc">
-                  <p>研究室のウェブサイトをリニューアルしました。</p>
+                  <p>研究室のウェブサイトをリニューアルしました．</p>
                 </div>
               </div></li>
               <li><div class="news-item-container">
@@ -154,7 +157,7 @@
                   <span class="news-date">2017.04.07</span>
                 </div>
                 <div class="news-desc">
-                  <p>藤元研究室・長谷川研究室と合同でお花見を行いました。</p>
+                  <p>藤元研究室・長谷川研究室と合同でお花見を行いました．</p>
                 </div>
               </div></li>
               <li><div class="news-item-container">
@@ -162,7 +165,7 @@
                   <span class="news-date">2017.05.15</span>
                 </div>
                 <div class="news-desc">
-                  <p>M1・M2学生が国際学会 in Taiwan に参加しました。</p>
+                  <p>M1・M2学生が国際学会 in Taiwan に参加しました．</p>
                 </div>
               </div></li>
               <li><div class="news-item-container">
@@ -170,7 +173,7 @@
                   <span class="news-date">2017.07.09</span>
                 </div>
                 <div class="news-desc">
-                  <p>藤元研究室・長谷川研究室・岩田研究室を含む７研究室と合同BBQを行いました。</p>
+                  <p>藤元研究室・長谷川研究室・岩田研究室を含む７研究室と合同BBQを行いました．</p>
                 </div>
               </div></li>
             </ul>
