@@ -78,111 +78,106 @@
       </div>
     </nav>
   </header>
-
   <main class="main-wrapper cmn-minw" id="main">
-    <div class="site-main-inner cmn-container">
-      <div class="slideshow-container site-main-container">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./res/slideshow/sample_00.jpg">
-            </div>
-            <div class="swiper-slide">
-              <img src="./res/slideshow/sample_01.jpg">
-            </div>
-            <div class="swiper-slide">
-              <img src="./res/slideshow/sample_02.jpg">
-            </div>
-            <div class="swiper-slide">
-              <img src="./res/slideshow/sample_03.jpg">
-            </div>
-            <div class="swiper-slide">
-              <img src="./res/slideshow/sample_04.jpg">
-            </div>
+    <div class="slideshow-container cmn-container">
+      <div class="slideshow-inner swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./res/slideshow/sample_00.jpg">
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-slide">
+            <img src="./res/slideshow/sample_01.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="./res/slideshow/sample_02.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="./res/slideshow/sample_03.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="./res/slideshow/sample_04.jpg">
+          </div>
         </div>
-        <script type="text/javascript">
-          var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 2,
-            speed: 2000,
-            autoplay: 3000,
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev'
-          })
-        </script>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      <article class="site-main-container">
-        <header class="article-header">
-          <h1 class="article-header-title">
-            <span class="article-title-main cmn-fsize-huge">よおこそ橘研究室へ</span>
-            <span class="article-title-sub cmn-fsize-large">- Introduction</span>
-          </h1>
-          <hr class="article-header-separater cmn-separater">
-        </header>
-        <div class="article-content cmn-fsize-txt">
-          <p>橘研究室です．ネットワークの研究をしています．</p>
-          <p>未経験者歓迎，残業なし，アットホームな雰囲気が特徴の研究室です．</p>
-        </div>
-      </article>
-      <article class="site-main-container">
-        <header class="article-header">
-          <h1 class="article-header-title">
-            <span class="article-title-main cmn-fsize-huge">新着情報</span>
-            <span class="article-title-sub cmn-fsize-large">- Information</span>
-          </h1>
-          <hr class="article-header-separater cmn-separater">
-        </header>
-        <div class="news-content article-content cmn-fsize-txt">
-          <ul class="news-items">
-            <li class="news-item"><div class="news-item-container news-type-update">
-              <header class="news-header">
-                <span class="news-date">2017.04.01</span>
-              </header>
-              <div class="news-disc">
-                <p>研究室のウェブページを作成しました．</p>
-              </div>
-            </div></li>
-            <li class="news-item"><div class="news-item-container news-type-event">
-              <header class="news-header">
-                <span class="news-date">2017.04.16</span>
-              </header>
-              <div class="news-disc">
-                <p>お花見を行いました．</p>
-                <p>さくらがとてもきれいで，すごいなあと思いました．</p>
-              </div>
-            </div></li>
-            <li class="news-item"><div class="news-item-container news-type-academic">
-              <header class="news-header">
-                <span class="news-date">2017.05.01</span>
-              </header>
-              <div class="news-disc">
-                <p>国際学会に参加しました．</p>
-                <p>世界はすごいなあと思いました．</p>
-                <p>楽しかったです．</p>
-              </div>
-            </div></li>
-            <li class="news-item"><div class="news-item-container news-type-event">
-              <header class="news-header">
-                <span class="news-date">2017.07.01</span>
-              </header>
-              <div class="news-disc">
-                <p>BBQを行いました．</p>
-                <p>楽しかったです．</p>
-              </div>
-            </div></li>
-          </ul>
-        </div>
-      </aritcle>
+      <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          slidesPerView: 3,
+          spaceBetween: 2,
+          speed: 2000,
+          autoplay: 3000,
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+        })
+      </script>
+    </div>
+    <div class="main-container">
+      <div class="main-inner cmn-container">
+        <article class="content">
+          <header class="content-info">
+            <h1 class="content-info-title">
+              <span class="content-info-title-main cmn-fsize-huge">よおこそ橘研究室へ</span>
+              <span class="content-info-title-sub cmn-fsize-large">- Introduction</span>
+            </h1>
+          </header>
+          <hr class="content-separater cmn-separater">
+          <div class="content-desc cmn-fsize-txt">
+            <p>橘研究室です．ネットワークの研究をしています．</p>
+            <p>未経験者歓迎，残業なし，アットホームな雰囲気が特徴の研究室です．</p>
+          </div>
+        </article>
+        <article class="content">
+          <header class="content-info">
+            <h1 class="content-info-title">
+              <span class="content-info-title-main cmn-fsize-huge">新着情報</span>
+              <span class="content-info-title-sub cmn-fsize-large">- Information</span>
+            </h1>
+          </header>
+          <hr class="content-separater cmn-separater">
+          <div class="news-container content-desc cmn-fsize-small">
+            <ul class="news-items">
+              <li><div class="news-item-container">
+                <div class="news-info">
+                  <span class="news-date">2017.04.01</span>
+                </div>
+                <div class="news-desc">
+                  <p>研究室のウェブサイトをリニューアルしました。</p>
+                </div>
+              </div></li>
+              <li><div class="news-item-container">
+                <div class="news-info">
+                  <span class="news-date">2017.04.07</span>
+                </div>
+                <div class="news-desc">
+                  <p>藤元研究室・長谷川研究室と合同でお花見を行いました。</p>
+                </div>
+              </div></li>
+              <li><div class="news-item-container">
+                <div class="news-info">
+                  <span class="news-date">2017.05.15</span>
+                </div>
+                <div class="news-desc">
+                  <p>M1・M2学生が国際学会 in Taiwan に参加しました。</p>
+                </div>
+              </div></li>
+              <li><div class="news-item-container">
+                <div class="news-info">
+                  <span class="news-date">2017.07.09</span>
+                </div>
+                <div class="news-desc">
+                  <p>藤元研究室・長谷川研究室・岩田研究室を含む７研究室と合同BBQを行いました。</p>
+                </div>
+              </div></li>
+            </ul>
+          </div>
+      </div>
     </div>
   </main>
-
   <footer class="footer-wrapper cmn-minw cmn-thm" id="footer">
     <div class="footer-inner cmn-container">
       <p class="footer-copyright cmn-fsize-small"><small>© 2017 Tachibana Lab. All Rights Reserved.</small></p>

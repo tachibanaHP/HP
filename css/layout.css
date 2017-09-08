@@ -71,6 +71,16 @@ h6 {
   color: #222;
 }
 
+.cmn-fsize-txt {
+  font-size: 1.0rem;
+  line-height: 1.875;
+}
+
+.cmn-fsize-txt-cmpr {
+  font-size: 1.0rem;
+  line-height: 1.42857;
+}
+
 .cmn-fsize-tiny {
   font-size: 0.7rem;
 }
@@ -89,11 +99,6 @@ h6 {
 
 .cmn-fsize-huge {
   font-size: 1.5rem;
-}
-
-.cmn-fsize-txt {
-  font-size: 1.0rem;
-  line-height: 1.875;
 }
 
 .cmn-nextp {
@@ -264,14 +269,27 @@ h6 {
 /*
  * ---- Site Main Style
  *
- *      NOTE: article settings are in the lower part..
+ *      NOTE: news settings are in the lower part..
  *
 **/
 
-.site-main-container {
+.content {
   margin: 16px 8px;
   margin: 0;
   padding: 16px 8px;
+}
+
+.content-info-title-sub {
+  margin-left: 4px;
+}
+
+.content-separater {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.content-desc {
+  margin-left: 20px;
 }
 
 /*
@@ -315,13 +333,12 @@ h6 {
  * ---- Slideshow Style
 **/
 
-.slideshow-container {
+.slideshow-inner {
   margin: 0 2px;
   padding: 2px 0 0 0;
-  text-align: center;
 }
 
-.slideshow-container img {
+.slideshow-inner img {
   width:auto;
   height:auto;
   max-width:100%;
@@ -333,7 +350,7 @@ h6 {
  * ---- News Style
 **/
 
-.news-content {
+.news-container {
   height: 200px;
   overflow-y: scroll;
 }
@@ -344,22 +361,22 @@ h6 {
   list-style:none;
 }
 
-.news-item:first-child {
+.news-items > li:first-child {
     /* NOTE: column-REVERSE property is uded. so first-child. */
   border-bottom: none;
 }
 
-.news-item {
+.news-items > li {
   border-bottom: 1px solid #ccc;
   padding: 16px 0;
 }
 
-.news-header,
-.news-disc {
+.news-info,
+.news-desc {
   display: inline-block;
   vertical-align: middle;
 }
 
-.news-disc {
+.news-desc {
   margin-left: 32px;
 }
