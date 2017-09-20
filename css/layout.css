@@ -93,12 +93,16 @@ h6 {
   font-size: 1.0rem;
 }
 
+.cmn-fsize-slarge {
+  font-size: 1.1rem;
+}
+
 .cmn-fsize-large {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .cmn-fsize-huge {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .cmn-fweight-bold {
@@ -291,18 +295,52 @@ h6 {
 **/
 
 .content {
-  margin: 16px 8px;
-  margin: 0;
-  padding: 16px 8px;
+  margin: 16px 0 32px 8px;
+}
+
+.content-flex {
+  display: flex;
+}
+
+.content-flex-space-between {
+  justify-content: space-between;
+}
+
+.content-flex-baseline {
+  align-items: baseline;
+}
+
+.content-nbm {
+  margin-bottom: 16px;
+}
+
+.content-info-title-main {
+  margin-left: 4px;
 }
 
 .content-info-title-sub {
   margin-left: 4px;
 }
 
+.content-info-pagetop {
+  padding-right: 8px;
+}
+
 .content-separater {
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin: 4px 2px 8px 0;
+}
+
+.content-image-container {
+  margin: 0 auto;
+  padding: 0 2px 0 0;
+    /* this should be set same value with margin-right of content-separater. */
+}
+
+.content-image-container img {
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height: 100%;
 }
 
 .content-desc {
@@ -327,23 +365,6 @@ h6 {
 /*******************************************************/
 
 /*
- * ---- Article Style
-**/
-
-.article-title-sub {
-  margin-left: 4px;
-}
-
-.article-header-separater {
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
-
-.article-content {
-  margin-left: 20px;
-}
-
-/*
  * ---- Slideshow Style
 **/
 
@@ -365,6 +386,7 @@ h6 {
 
 .news-container {
   height: 200px;
+  margin-right: 4px;
   overflow-y: scroll;
 }
 
@@ -381,6 +403,7 @@ h6 {
 
 .news-items > li {
   border-bottom: 1px solid #ccc;
+  margin-right: 2px;
   padding: 16px 0;
 }
 
@@ -391,4 +414,8 @@ h6 {
 
 .news-desc {
   margin-left: 32px;
+}
+
+.papers-list {
+  margin-left: 16px;
 }
