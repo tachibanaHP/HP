@@ -1,0 +1,158 @@
+/*
+ * [ IMPORTANT ]
+ *
+ * Do NOT use ID-selector for coding CSS !!
+ * You should only use class-selector.
+ *
+**/
+
+/*
+ * ---- Slideshow Style
+**/
+
+.slideshow-inner {
+  margin: 20px 2px 0 2px;
+}
+
+.slideshow-inner img {
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height: 100%;
+  border-radius: 2px;
+}
+
+/*
+ * ---- News Style
+**/
+
+.news-container {
+  height: 200px;
+  margin-right: 4px;
+  overflow-y: scroll;
+}
+
+.news-items {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style:none;
+}
+
+.news-items > li:first-child {
+    /* NOTE: column-REVERSE property is uded. so first-child. */
+  border-bottom: none;
+}
+
+.news-items > li {
+  border-bottom: 1px solid #ccc;
+  margin-right: 2px;
+  padding: 16px 0;
+}
+
+.news-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.news-desc {
+  margin-left: 32px;
+}
+
+/*
+ * ---- Achievements Style
+**/
+.papers-container {
+  margin-left: 16px;
+}
+
+.papers-list {
+  margin-left: 16px;
+}
+
+/*
+ * ---- Members Style
+**/
+
+.prof-image-container {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 4px 32px 0 32px;
+}
+
+.prof-image-container img {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.students-table {
+  border-collapse: collapse;
+  margin: 16px 0 0 32px;
+  width: 90%;
+}
+
+.students-table th {
+  background: #eee;
+}
+
+.students-table-1col {
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 15%;
+}
+
+.students-table-2col {
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  text-align: left;
+  width: 35%;
+}
+
+.students-table-3col {
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  text-align: left;
+  text-decoration: underline;
+  width: 50%;
+}
+
+.students-link:link,
+.students-link:visited,
+.students-link:hover,
+.students-link:active {
+  color: #222;
+}
+
+.students-link:hover {
+  text-decoration: underline;
+}
+
+.students-obog {
+  margin-right: 6.66666666%;
+}
+
+/*
+ * ---- For Students Style
+**/
+
+.env-list {
+  list-style: none;
+}
+
+.env-list > li {
+  margin-top: 8px;
+}
+
+.env-list > li:first-child {
+  margin-top: 0;
+}
+
+.env-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.env-text-container {
+}
+
+.env-img-container {
+  padding: 4px 0 0 32px;
+}

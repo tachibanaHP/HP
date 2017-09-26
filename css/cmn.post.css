@@ -1,0 +1,11 @@
+/*
+ * [ IMPORTANT ]
+ *
+ * Do NOT use ID-selector for coding CSS !!
+ * You should only use class-selector.
+ *
+**/
+
+.cmn-text-no-decoration {
+  text-decoration: none;
+}

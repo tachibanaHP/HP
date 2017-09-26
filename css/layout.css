@@ -1,159 +1,10 @@
 /*
- * ---- Base
- */
-
-html {
-  font-size: 15px;
-}
-
-body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, Verdana, "メイリオ", Meiryo, "MS PGothic";
-  font-size: 1.0rem;
-  line-height: 1.42857;
-}
-
-a {
-  cursor: pointer;
-}
-
-a:link {
-  color: #00f;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #00f;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff8c00;
-  text-decoration: none;
-}
-
-a:active {
-  color: #fff;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
-
-/*
  * [ IMPORTANT ]
  *
  * Do NOT use ID-selector for coding CSS !!
  * You should only use class-selector.
  *
 **/
-
-/*
- * ---- Site Style
-**/
-
-.cmn-container {
-  margin: 0 auto;
-    /* centering */
-  max-width: 1010px;
-}
-
-.cmn-bg {
-  background-color: #fff;
-}
-
-.cmn-fcolor {
-  color: #222;
-}
-
-.cmn-fsize-txt {
-  font-size: 1.0rem;
-  line-height: 1.875;
-}
-
-.cmn-fsize-txt-cmpr {
-  font-size: 1.0rem;
-  line-height: 1.42857;
-}
-
-.cmn-fsize-tiny {
-  font-size: 0.6rem;
-}
-
-.cmn-fsize-small {
-  font-size: 0.8rem;
-}
-
-.cmn-fsize-middle {
-  font-size: 1.0rem;
-}
-
-.cmn-fsize-slarge {
-  font-size: 1.1rem;
-}
-
-.cmn-fsize-large {
-  font-size: 1.4rem;
-}
-
-.cmn-fsize-huge {
-  font-size: 1.6rem;
-}
-
-.cmn-fweight-bold {
-  font-weight: bold;
-}
-
-.cmn-nextp {
-  margin-top: 1.4em;
-}
-
-.cmn-separater {
-  height:1px;
-  border:0;   
-  border-top:1px solid #bbb;
-}
-
-.cmn-display-block {
-  display: block;
-}
-
-.cmn-minw {
-  min-width: 780px;
-}
-
-.cmn-linkstyle-pure,
-.cmn-linkstyle-pure:link,
-.cmn-linkstyle-pure:visited,
-.cmn-linkstyle-pure:hover,
-.cmn-linkstyle-pure:active {
-  color: #222;
-  text-decoration: none;
-}
-
-.cmn-thm {
-  background-color: #233;
-  background-color: #349;
-  color: #fff;
-}
-
-.cmn-thm a,
-.cmn-thm a:link,
-.cmn-thm a:visited,
-.cmn-thm a:hover,
-.cmn-thm a:active {
-  color: #fff;
-  text-decoration: none;
-}
-
-.cmn-thm a:hover {
-  color: #f73;
-}
 
 /*
  * ---- Masthead Style
@@ -289,9 +140,6 @@ h6 {
 
 /*
  * ---- Site Main Style
- *
- *      NOTE: news settings are in the lower part..
- *
 **/
 
 .content {
@@ -308,6 +156,10 @@ h6 {
 
 .content-flex-baseline {
   align-items: baseline;
+}
+
+.content-flex-stretch {
+  align-items: stretch;
 }
 
 .content-nbm {
@@ -332,8 +184,6 @@ h6 {
 
 .content-image-container {
   margin: 0 auto;
-  padding: 0 2px 0 0;
-    /* this should be set same value with margin-right of content-separater. */
 }
 
 .content-image-container img {
@@ -344,7 +194,7 @@ h6 {
 }
 
 .content-desc {
-  margin-left: 20px;
+  padding: 0 20px;
 }
 
 /*
@@ -360,62 +210,4 @@ h6 {
   display: flex;
   height: 64px;
   justify-content: center;
-}
-
-/*******************************************************/
-
-/*
- * ---- Slideshow Style
-**/
-
-.slideshow-inner {
-  margin: 20px 2px 0 2px;
-}
-
-.slideshow-inner img {
-  width:auto;
-  height:auto;
-  max-width:100%;
-  max-height: 100%;
-  border-radius: 2px;
-}
-
-/*
- * ---- News Style
-**/
-
-.news-container {
-  height: 200px;
-  margin-right: 4px;
-  overflow-y: scroll;
-}
-
-.news-items {
-  display: flex;
-  flex-direction: column-reverse;
-  list-style:none;
-}
-
-.news-items > li:first-child {
-    /* NOTE: column-REVERSE property is uded. so first-child. */
-  border-bottom: none;
-}
-
-.news-items > li {
-  border-bottom: 1px solid #ccc;
-  margin-right: 2px;
-  padding: 16px 0;
-}
-
-.news-item-container {
-  display: flex;
-  align-items: center;
-}
-
-.news-desc {
-  margin-left: 32px;
-}
-
-.papers-list {
-  margin-left: 16px;
 }

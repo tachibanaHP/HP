@@ -1,0 +1,172 @@
+/*
+ * [ IMPORTANT ]
+ *
+ * Do NOT use ID-selector for coding CSS !!
+ * You should only use class-selector.
+ *
+**/
+
+/*
+ * ---- Base
+ */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, Verdana, "メイリオ", Meiryo, "MS PGothic";
+  font-size: 1.0rem;
+  line-height: 1.42857;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:link {
+  color: #00f;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #00f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+a:active {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/*
+ * ---- Site Style
+**/
+
+.cmn-container {
+  margin: 0 auto;
+    /* centering */
+  max-width: 960px;
+}
+
+.cmn-bg {
+  background-color: #fff;
+}
+
+.cmn-fcolor {
+  color: #222;
+}
+
+.cmn-fsize-txt {
+  font-size: 1.0rem;
+  line-height: 1.875;
+}
+
+.cmn-fsize-txt-cmpr {
+  font-size: 1.0rem;
+  line-height: 1.42857;
+}
+
+.cmn-fsize-tiny {
+  font-size: 0.6rem;
+}
+
+.cmn-fsize-small {
+  font-size: 0.8rem;
+}
+
+.cmn-fsize-middle {
+  font-size: 1.0rem;
+}
+
+.cmn-fsize-slarge {
+  font-size: 1.1rem;
+}
+
+.cmn-fsize-large {
+  font-size: 1.4rem;
+}
+
+.cmn-fsize-huge {
+  font-size: 1.6rem;
+}
+
+.cmn-fweight-bold {
+  font-weight: bold;
+}
+
+.cmn-text-underline {
+  text-decoration: underline;
+}
+
+.cmn-nextp {
+  margin-top: 1.4em;
+}
+
+.cmn-align-center {
+  text-align: center;
+}
+
+.cmn-align-right {
+  text-align: right;
+}
+
+.cmn-separater {
+  height:1px;
+  border:0;   
+  border-top:1px solid #bbb;
+}
+
+.cmn-display-block {
+  display: block;
+}
+
+.cmn-minw {
+  min-width: 720px;
+}
+
+.cmn-linkstyle-pure,
+.cmn-linkstyle-pure:link,
+.cmn-linkstyle-pure:visited,
+.cmn-linkstyle-pure:hover,
+.cmn-linkstyle-pure:active {
+  color: #222;
+  text-decoration: none;
+}
+
+.cmn-thm {
+  background-color: #233;
+  background-color: #349;
+  color: #fff;
+}
+
+.cmn-thm a,
+.cmn-thm a:link,
+.cmn-thm a:visited,
+.cmn-thm a:hover,
+.cmn-thm a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cmn-thm a:hover {
+  color: #f73;
+}
+
+.cmn-indent p {
+  text-indent: 1em;
+}
