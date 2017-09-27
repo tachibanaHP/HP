@@ -146,6 +146,7 @@
 }
 
 .env-container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -154,5 +155,5 @@
 }
 
 .env-img-container {
-  padding: 4px 0 0 32px;
+  padding: 4px 0 4px 20px;
 }
